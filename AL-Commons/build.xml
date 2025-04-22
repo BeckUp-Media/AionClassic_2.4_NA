@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="AL-Commons" default="jar" basedir=".">
+	<description>
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+		General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program. If not, see [http://www.gnu.org/licenses/].
+	</description>
+	<property name="jre" location="${java.home}/lib"/>
+	<property name="src" location="src"/>
+	<property name="config" location="config"/>
+	<property name="lib" location="lib"/>
+	<property name="build" location="build"/>
+	<property name="build.classes" location="${build}/classes"/>
+
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+
+	<target name="clean" description="Remove the output directories">
+		<delete dir="${build}"/>
+	</target>
+	<target name="init" depends="clean" description="Create the output directories.">
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build.classes}"/>
+	</target>
+	<target name="compile" depends="init" description="Compile the source.">
+		<javac srcdir="${src}"
+			classpathref="classpath"
+			destdir="${build.classes}"
+			compiler="modern"
+			debug="true"
+			debuglevel="lines,vars,source"
+			includeantruntime="false"
+			source="1.8"
+			target="1.8"
+			encoding="UTF-8"/>
+	</target>
+	<target name="jar" depends="compile" description="Create the jar file">
+		<tstamp>
+			<format property="date" pattern="yyyy-MM-dd-HH:mm"/>
+		</tstamp>
+		<jar destfile="${build}/al-commons.jar">
+			<fileset dir="${build.classes}"/>
+			<manifest>
+				<attribute name="Date" value="${date}"/>
+				<attribute name="Premain-Class" value="com.aionemu.commons.callbacks.JavaAgentEnhancer"/>
+				<attribute name="Can-Retransform-Classes" value="true"/>
+			</manifest>
+		</jar>
+		<delete dir="${build.classes}"/>
+	</target>
+</project>

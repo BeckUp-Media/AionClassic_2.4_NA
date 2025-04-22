@@ -1,0 +1,22 @@
+# Recursive
+!.gitignore
+
+# Alg config
+.idea
+*.iml
+
+# AL-Game config
+AL-Chat/build
+AL-Chat/target
+
+# AL-Login config
+AL-Login/build
+AL-Login/target
+
+# AL-Chat config
+AL-Game/build
+AL-Game/target
+
+# AL-Commons config
+AL-Commons/build
+AL-Commons/target
