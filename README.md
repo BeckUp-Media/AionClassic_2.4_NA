@@ -21,8 +21,9 @@ For compile:
 - bind in build.xml files from Al-Commons, Al-Login, Al-Game.
 - open Ant on right side of IDE, open each Module and hit jar or dist.
 
-You can use this client:
-[https://disk.yandex.ru/d/8r46o43ZR7x-Lw/aion%202.x/AION_CLASSIC%202.4](https://disk.yandex.ru/d/8r46o43ZR7x-Lw/aion%202.x/AION_CLASSIC%202.4)
+You can use this client:  (No ... is KR, you need an NA i think)
+
+~~[https://disk.yandex.ru/d/8r46o43ZR7x-Lw/aion%202.x/AION_CLASSIC%202.4](https://disk.yandex.ru/d/8r46o43ZR7x-Lw/aion%202.x/AION_CLASSIC%202.4)~~
 
 Original source repo : https://github.com/MATTYOneInc/AionClassic_2.4
 <br></br>
