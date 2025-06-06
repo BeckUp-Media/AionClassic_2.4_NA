@@ -23,7 +23,7 @@ For compile:
 
 You can use this client:  (Untested)
 
-[AionClassic2.4_NA](https://drive.google.com/file/d/1CmXMkiNnnPK32wa9QcoTeZBws3wrHfPX/view?usp=sharing)
+[AionClassic2.4_NA_Client](https://drive.google.com/file/d/1VkuvjlnDICLw0uhMg1tno6gGBCSucQW4/view?usp=sharing)
 
 Original source repo : https://github.com/MATTYOneInc/AionClassic_2.4
 <br></br>
