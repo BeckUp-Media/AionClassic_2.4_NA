@@ -29,5 +29,6 @@ Original source repo : https://github.com/MATTYOneInc/AionClassic_2.4
 <br></br>
 <b>Info BeckUp.Media</b>
 
+- Geo files: [AionClassic2.4_NA_Geo](https://drive.google.com/file/d/14JsLOo1EiydU1uyvs42M3EiyI-IUtBeq/view?usp=sharing)
 - Chatserver source missing
 - I not tested the server, but im pretty sure that the server is buggy as hell. XD
